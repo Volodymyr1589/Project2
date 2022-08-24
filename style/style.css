@@ -1,0 +1,288 @@
+/* обнулює зовнішні відступи  margin: 0;, і внутрішні відступи padding: 0; */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: normal;
+}
+
+/* <header class="header"> */
+.header,
+/* <footer class="footer container"> */
+.footer {
+  /* background-color: rgba(255, 113, 67, 0.27); */
+  background-color: yellow;
+  padding: 30px 0 31px;
+}
+
+/* <div class="container header_flex"> */
+.header_flex,
+/* <section class="container about"> */
+ .about,
+ /* <section class="container subscribe"> */
+.subscribe, 
+/* <div class="container footer_flex"> */
+.footer_flex, 
+/* <div class="plan_flex"> */
+.plan_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* <div class="container"> */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* <nav>, <li> */
+.nav_li {
+  display: inline-block;
+}
+
+/* .nav_li:not(:first-of-type) псевдо клас */
+.nav_li:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+/* <a class="nav_link" href="#"> */
+.nav_link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: -0, 468947px;
+  /* color: #696871; */
+  color: blue;
+  text-decoration: none;
+}
+
+/* .nav_link:hover псевдо клас, при наведині курсором на слово, шририфт висвітюється чорним кольором */
+.nav_link:hover {
+  color: black;
+  transition: 300ms;
+}
+
+/* <button class="button button_blue">Get Started</button> */
+.button {
+  width: 214px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  background: yellow;
+  color: black;
+  border: 7px solid blue;
+  letter-spacing: -0, 531474px;
+  /* border: none;  none відключає border */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button_blue:hover {
+  background: blue;
+  transition: 500ms;
+}
+
+/* <button class="button button_yellow"> */
+.button_yellow {
+  background: yellow;
+  color: black;
+  border: 5px solid blue;
+}
+
+/* .button_yellow:hover псевдо клас */
+.button_yellow:hover {
+  background: blue;
+  transition: 500ms;
+}
+
+.about_title {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 77px;
+  letter-spacing: -2.50105px;
+  color: #191918;
+  max-width: 410px;
+  margin-bottom: 30px;
+}
+
+.about_text {
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: -0.625263px;
+  /* color: #696871; */
+  color: blue;
+  max-width: 430px;
+  margin-bottom: 52px;
+}
+
+/* <section class="container_about"> */
+.about {
+  margin: 52px auto 52px;
+}
+
+/* <button class="button button_yellow">Get Started</button> */
+.button_yellow, 
+/* <button class="button button_Try">Try</button> */
+.button_Try {
+  background: yellow;
+  color: black;
+  border: 7px solid blue;
+}
+
+.button_Try {
+  margin-left: 34px;
+}
+
+/* .button_yellow:hover псевдо клас */
+.button_yellow:hover {
+  background: blue;
+  transition: 500ms;
+}
+
+/* button_blue:hover псевдо клас */
+.button_Try:hover {
+  background: blue;
+  transition: 500ms;
+}
+
+/* <section class="container subscribe"> */
+.subscribe {
+  margin-bottom: 52px;
+}
+
+/* <h2 class="subscribe_title">Subscription index</h2> */
+.subscribe_title {
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 52px;
+  letter-spacing: -1.56316px;
+  color: black;
+  margin-bottom: 52px;
+}
+
+/* <input class="input" type="email" placeholder="Email" /> */
+.input {
+  width: 304px;
+  height: 66px;
+  border: 3px solid blue;
+  border-radius: 9px;
+  padding-left: 21px;
+  /* box-sizing: border-box; це значення допомагає в раховувати padding, margin і border одночасно */
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 21px;
+}
+/* .input::placeholder псевдо елемент у відміності, від псевдо класу .button_yellow:hover відрізняється подвійною двокрапкою :: */
+.input::placeholder,
+.input {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: -0.531474px;
+  color: #000000;
+}
+/* псевдо клас focus відключає обводку навколо .input, значенням outline: none; */
+.input:focus {
+  outline: none;
+}
+
+/* <section class="container plan"> */
+.plan {
+  margin-bottom: 120px;
+}
+
+/* <h2 class="plan_title">Get the right plan for future</h2> */
+.plan_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: -1.87579px;
+  color: #19191b;
+  max-width: 502px;
+  margin-bottom: 102px;
+}
+
+/* <div class="item"> */
+.item {
+  width: 340px;
+  background: yellow;
+  border-radius: 12px;
+  text-align: center;
+  padding: 34px 34px 34px;
+  margin: 21px;
+}
+.item:hover {
+  transition: 300ms;
+  background: blue;
+  box-shadow: 7px 7px 7px 7px rgb(252, 255, 59);
+}
+
+.item:hover .item_text,
+.item:hover .item_title,
+.item:hover .item_li {
+  color: yellow;
+  transition: 300ms;
+}
+
+/* <p class="item_text">Premium</p> */
+.item_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: black;
+  /* margin-bottom: 12px; */
+}
+
+/* <h3 class="item_title">$29/month</h3> */
+.item_title {
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 52px;
+  letter-spacing: 3px;
+  color: black;
+  margin: 21px 0 21px;
+}
+
+/* <h3 class="item_title">$29<span>/month</span></h3> */
+.item_title span {
+  font-size: 30px;
+}
+
+/* <li class="item_li">10 Website</li>
+<li class="item_li">15 GB Hosting</li>
+<li class="item_li">Premium Support</li> */
+.item_li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* <button class="button button_item">Get Started</button> */
+.button_item {
+  font-weight: bold;
+  width: 250px;
+  height: 70px;
+  margin-top: 31px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: 7px solid blue;
+  background: yellow;
+  color: black;
+  cursor: pointer;
+}
+.button_item:hover {
+  border: 7px solid black;
+}
+.item:hover .button_item {
+  background: yellow;
+  transition: 300ms;
+  color: blue;
+}
